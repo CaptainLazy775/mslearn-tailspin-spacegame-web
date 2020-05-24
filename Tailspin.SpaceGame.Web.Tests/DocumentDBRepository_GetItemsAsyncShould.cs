@@ -51,7 +51,11 @@ namespace Tests
             // Verify that each score's game region matches the provided game region.
             Assert.That(scores, Is.All.Matches<Score>(score => score.GameRegion == gameRegion));
         }
-
+        /// <summary>
+        /// this is the failing test
+        /// </summary>
+        /// <param name="count"></param>
+        /// <returns></returns>
         [TestCase(0, ExpectedResult = 0)]
         [TestCase(1, ExpectedResult = 1)]
         [TestCase(10, ExpectedResult = 10)]
